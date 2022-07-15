@@ -1,4 +1,7 @@
-Question : https://leetcode.com/problems/sort-colors/
+// Question : https://leetcode.com/problems/sort-colors/
+
+// This problem is a variation of Dutch National Flag Algorithm
+// Time Complexity : O(n) and Space Complexity : O(1)
 
 class Solution {
 public:
