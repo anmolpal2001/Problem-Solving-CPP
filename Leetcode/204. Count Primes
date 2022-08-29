@@ -1,4 +1,4 @@
-/* Question : https://leetcode.com/problems/count-primes/ */
+// Question : https://leetcode.com/problems/count-primes/ 
 
 class Solution {
 public:
