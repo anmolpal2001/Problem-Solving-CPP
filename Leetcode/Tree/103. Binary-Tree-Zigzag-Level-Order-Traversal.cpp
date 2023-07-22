@@ -1,6 +1,7 @@
 Ques : https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
 
-Solution : 
+Solution :  
+// TC : O(N) , SC : O(N)
 class Solution {
 public:
     vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
