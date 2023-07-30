@@ -1,6 +1,7 @@
 Ques : https://www.codingninjas.com/studio/problems/flatten-bst-to-a-sorted-list_1169459
 
 Solution : 
+// TC : O(n) and SC : O(n)
 void inorder(TreeNode<int>* root,vector<int>&ans)
 {
     if(root == NULL) 
