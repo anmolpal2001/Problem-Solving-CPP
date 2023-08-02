@@ -1,6 +1,8 @@
 Ques : https://leetcode.com/problems/sort-colors/
 
-Solution : 
+// This problem is a variation of Dutch National Flag Algorithm
+
+Solution 1 : 
 // TC : O(N) and SC : O(1)
 class Solution {
 public:
@@ -24,6 +26,30 @@ public:
             {
                 swap(nums[mid],nums[high]);
                 high--;
+            }
+        }
+    }
+};
+
+
+Solution 2 : 
+// Time Complexity : O(n) and Space Complexity : O(1)
+class Solution {
+public:
+    void sortColors(vector<int>& nums) {
+        int lo=0;
+        int mid=0;
+        int hi=nums.size()-1;
+        while(mid<=hi)
+        {
+            switch(nums[mid])
+            {
+                case 0: swap(nums[mid++],nums[lo++]);
+                break;
+                case 1: mid++;
+                break;
+                case 2: swap(nums[mid],nums[hi--]);
+                break;
             }
         }
     }
