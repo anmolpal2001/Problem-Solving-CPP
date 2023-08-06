@@ -1,6 +1,7 @@
 Ques : https://leetcode.com/problems/valid-parentheses/
 
 Solution : 
+// TC : O(N) and SC : O(N)
 class Solution {
 public:
     bool isValid(string s) {
