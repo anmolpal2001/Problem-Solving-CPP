@@ -3,7 +3,7 @@ Ques : https://www.codingninjas.com/studio/problems/interview-shuriken-42-detect
 Solution : 
 Node *flyodDetectLoop(Node *head)
 {
-    if(head==NULL)
+    if(head==NULL || head->next==NULL)
     {
         return NULL;
     }
@@ -27,7 +27,7 @@ Node *flyodDetectLoop(Node *head)
 
 Node *getStartingNode(Node *head)
 {
-    if(head==NULL)
+    if(head==NULL || head->next==NULL)
     {
         return NULL;
     }
@@ -47,7 +47,7 @@ Node *getStartingNode(Node *head)
 
 Node *removeLoop(Node *head)
 {   
-    if(head==NULL)
+    if(head==NULL || head->next==NULL)
     {
         return NULL;
     }
