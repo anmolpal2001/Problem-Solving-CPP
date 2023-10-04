@@ -13,8 +13,9 @@ Node *removeDuplicates(Node *head)
     while(curr != NULL){
         if (visited.find(curr->data) != visited.end()){
             Node *next_node = curr->next;
+            Node *nodeToDelete = curr;
             prev->next = next_node;
-            delete curr;
+            delete nodeToDelete;
             curr=next_node;
         }
         else{
@@ -43,7 +44,8 @@ Node *removeDuplicates(Node *head)
             if(curr->data == temp->data)
             {
                 prev->next=temp->next;
-                delete temp;
+                Node * nodeToDelete = temp;
+                delete nodeToDelete;
                 temp=prev->next;
             }
             else
