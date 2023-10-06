@@ -27,7 +27,36 @@ public:
     }
 };
 
+
 // Approach - 2
+// TC : O(N) and SC : O(N)
+class Solution {
+public:
+    bool isPalindrome(ListNode* head) {
+        vector<int> arr;
+        ListNode * temp=head;
+        while(temp!=NULL)
+        {
+            arr.push_back(temp->val);
+            temp=temp->next;
+        }
+        int start=0;
+        int end=arr.size()-1;
+        while(start<=end)
+        {
+            if(arr[start]!=arr[end])
+            {
+                return false; 
+            }
+            start++;
+            end--;
+        }
+        return true;
+    }
+};
+
+
+// Approach - 3
 // TC : O(N) and SC : O(1)
 class Solution {
 public:
